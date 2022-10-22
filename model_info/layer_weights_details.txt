@@ -1,0 +1,42 @@
+"conv2d"
+model.layers[0].weights[0]	[3,3,3,32]	864							[0]
+model.layers[0].weights[1]	[32]		32		896					[1]
+
+"batch_normalization"
+model.layers[1].weights[0]	[32]		32							[2]
+model.layers[1].weights[1]	[32]		32							[3]
+model.layers[1].weights[2]	[32]		32				not-trainable		[4]
+model.layers[1].weights[3]	[32]		32		128		not-trainable	64	[5]
+
+"conv2d_1"
+model.layers[2].weights[0]	[3,3,32,32]	9216							[6]
+model.layers[2].weights[1]	[32]		32		9248					[7]
+
+"batch_normalization_1"
+model.layers[3].weights[0]	[32]									[8]
+model.layers[3].weights[1]	[32]									[9]
+model.layers[3].weights[2]	[32]						not-trainable		[10]
+model.layers[3].weights[3]	[32]				128		not-trainable	64	[11]
+
+'max_pooling2d'
+'dropout'
+
+'conv2d_2'
+model.layers[6].weights[0]	[3,3,32,64]	18432
+model.layers[6].weights[1].shape[64]		64		18496		
+
+'batch_normalization_2'
+model.layers[7].weights[0]	[64]
+model.layers[7].weights[1]	[64]
+model.layers[7].weights[2]	[64]						not-trainable
+model.layers[7].weights[3]	[64]				256		not-trainable	
+
+'conv2d_3'
+model.layers[8].weights[0]	[3,3,64,64]	36864
+model.layers[8].weights[1]	[64]		64		36928	
+
+'batch_normalization_3'
+model.layers[9].weights[0]	[64]	
+model.layers[9].weights[1]	[64]
+model.layers[9].weights[2]	[64]						not-trainable
+model.layers[9].weights[3]	[64]				256		not-trainable

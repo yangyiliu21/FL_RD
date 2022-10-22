@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+csvec/__init__.py
+csvec/csvec.py
+csvec/test_csvec.py
+csvec.egg-info/PKG-INFO
+csvec.egg-info/SOURCES.txt
+csvec.egg-info/dependency_links.txt
+csvec.egg-info/not-zip-safe
+csvec.egg-info/top_level.txt

@@ -1,5 +1,5 @@
 # FL_RD
-Code for paper:
+Code for paper: [https://arxiv.org/abs/2301.09269]
 
 Need manually change quantization type and network architecture
 
